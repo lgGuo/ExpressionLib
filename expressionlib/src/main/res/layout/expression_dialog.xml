@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_expression_meanu_root"
+    style="@style/Translucent_NoTitle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/ll_expression_meanu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_bg"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp">
+
+            <Button
+                android:id="@+id/btn_chose_expression"
+                android:layout_width="29dp"
+                android:layout_height="29dp"
+                android:layout_marginLeft="6dp"
+                android:background="@mipmap/select_expressin_normal" />
+
+
+            <com.yctech.expressionlib.wiget.FilterEmoJiEditText
+                android:id="@+id/et_content"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_circle_content_bg"
+                android:maxLines="4"
+                android:minHeight="35dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="6dp"
+                android:paddingRight="29dip"
+                android:paddingTop="10dp"
+                android:textColorHint="#999"
+                android:textSize="14sp" />
+
+
+            <Button
+                android:id="@+id/btn_send"
+                android:layout_width="40dip"
+                android:layout_height="30dip"
+                android:layout_marginRight="6dp"
+                android:background="@drawable/shape_send_bt"
+                android:text="发送"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+
+        <com.yctech.expressionlib.wiget.PanelLayout
+            android:id="@+id/panel_root"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:orientation="vertical">
+            <!-- 面板内容 -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#efefef" />
+
+            <LinearLayout
+                android:id="@+id/ll_expression_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/viwepager_expression"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="#fff"
+                    android:paddingTop="10dp">
+
+                </android.support.v4.view.ViewPager>
+
+                <LinearLayout
+                    android:id="@+id/ll_dot_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp"></LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/select_expression_type_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </com.yctech.expressionlib.wiget.PanelLayout>
+    </LinearLayout>
+
+</RelativeLayout>

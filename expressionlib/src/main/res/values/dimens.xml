@@ -1,0 +1,25 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="guide_dot_padding">3dp</dimen>
+    <dimen name="corners_radius">4dp</dimen>
+    <dimen name="base_margin">12dp</dimen>
+    <dimen name="comment_popup_more_width">120dp</dimen>
+    <dimen name="comment_popup_more_height">30dp</dimen>
+
+
+    <!--键盘-->
+    <dimen name="min_panel_height">210dp</dimen>
+    <dimen name="max_panel_height">380dp</dimen>
+    <dimen name="image_width">120dp</dimen>
+    <dimen name="image_final_width">32dp</dimen>
+
+    <!--字体-->
+    <dimen name="meduim_text">14sp</dimen>
+
+    <dimen name="popmenu_right_padding">10dp</dimen>
+    <dimen name="popmenu_item_height">47dp</dimen>
+    <dimen name="popmenu_top_padding">6dp</dimen>
+    <dimen name="popmenu_width">120dp</dimen>
+</resources>
